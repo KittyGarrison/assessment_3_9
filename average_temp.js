@@ -1,27 +1,32 @@
 var sget = require("sget");
 
+var sumOfTemps = 0;
+
 var temps = [];
 
 var mon = sget("Enter the average temperature for Monday in degrees fahrenheit. ").trim();
-temps.push(mon);
+temps.push(Number(mon));
 
 var tuse = sget("Enter the average temperature for Tuseday in degrees fahrenheit. ").trim();
-temps.push(tuse);
+temps.push(Number(tuse));
 
 var wed = sget("Enter the average temperature for Wednesday in degrees fahrenheit. ").trim();
-temps.push(wed);
+temps.push(Number(wed));
 
 var thurs = sget("Enter the average temperature for Thursday in degrees fahrenheit. ").trim();
-temps.push(thurs);
+temps.push(Number(thurs));
 
 var fri = sget("Enter the average temperature for Friday in degrees fahrenheit. ").trim();
-temps.push(fri);
+temps.push(Number(fri));
 
 var sat = sget("Enter the average temperature for Saturday in degrees fahrenheit. ").trim();
-temps.push(sat);
+temps.push(Number(sat));
 
-var sun = sget("Enter the average temperature for Sunday in degrees fahrenheit. ").trim();
-temps.push(sun);
+var sund = sget("Enter the average temperature for Sunday in degrees fahrenheit. ").trim();
+temps.push(Number(sund));
 
+// for(var i=0, len=temps.length; i<len; i++){
+//     sumOfTemps += temps[i][1];
+// }
 
 console.log (temps);
