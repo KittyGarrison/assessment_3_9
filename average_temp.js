@@ -25,8 +25,8 @@ temps.push(Number(sat));
 var sund = sget("Enter the average temperature for Sunday in degrees fahrenheit. ").trim();
 temps.push(Number(sund));
 
-// for(var i=0, len=temps.length; i<len; i++){
-//     sumOfTemps += temps[i][1];
-// }
+// console.log (temps);
 
-console.log (temps);
+var sumOfTemps = temps.reduce(function(a, b){return a+b;});
+
+console.log ("The average temperature for the week is %s degrees fahrenheit.",sumOfTemps/7);
