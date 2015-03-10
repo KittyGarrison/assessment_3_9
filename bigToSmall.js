@@ -6,4 +6,4 @@ var numSorted = (numArray.sort(function(a,b){
 		return b-a
 	}));
 
-console.log ("Your numbers from gratest to smallest are " + numSorted)
+console.log ("Your numbers from greatest to smallest are " + numSorted)

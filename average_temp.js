@@ -1,7 +1,5 @@
 var sget = require("sget");
 
-var sumOfTemps = 0;
-
 var temps = [];
 
 var mon = sget("Enter the average temperature for Monday in degrees fahrenheit. ").trim();
